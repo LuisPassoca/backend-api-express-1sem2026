@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./src/server.js",
-    "dev": "node --watch ./src/server.js"
+    "dev": "node --watch --env-file=.env src/server.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,13 @@
   },
   "homepage": "https://github.com/LuisPassoca/backend-api-express-1sem2026#readme",
   "dependencies": {
-    "express": "^5.2.1"
+    "@prisma/adapter-mariadb": "^7.4.2",
+    "@prisma/client": "^7.4.2",
+    "express": "^5.2.1",
+    "mariadb": "^3.5.2"
+  },
+  "devDependencies": {
+    "dotenv": "^17.3.1",
+    "prisma": "^7.4.2"
   }
 }
