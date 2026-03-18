@@ -23,6 +23,7 @@
   "dependencies": {
     "@prisma/adapter-mariadb": "^7.4.2",
     "@prisma/client": "^7.4.2",
+    "cors": "^2.8.6",
     "express": "^5.2.1",
     "mariadb": "^3.5.2"
   },

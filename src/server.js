@@ -1,12 +1,15 @@
 import express from "express"
 import userRouter from "./routers/userRouter.js"
-import postRouter from "./routers/postRouter.js"
+import publicationRouter from "./routers/publicationRouter.js"
+
 
 const app = express()
 const PORT = 3000
 
+app.use(express.json())
+
 app.use('/user', userRouter)
-app.use('/post', postRouter)
+app.use('/publication', publicationRouter)
 
 app.get('/', (req, res) => {
     res.send('Olá mundo!')
@@ -15,3 +18,4 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`API rodando na porta ${PORT}`)
 })
+    
