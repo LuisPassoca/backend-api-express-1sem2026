@@ -8,8 +8,8 @@ const router = express.Router()
 
 router.get('/', getUsersController)
 router.post('/', createUserController)
-router.put('/', updateUserController)
-router.patch('/', updateUserAvatarController)
-router.delete('/', deleteUsersController)
+router.put('/:id', updateUserController)
+router.patch('/:id', updateUserAvatarController)
+router.delete('/:id', deleteUsersController)
 
 export default router

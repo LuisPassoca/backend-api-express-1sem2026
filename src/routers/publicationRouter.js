@@ -10,7 +10,7 @@ router.get('/', getPubliController)
 router.post('/', createPubliController)
 router.put('/', updatePubliController)
 router.patch('/', updatePubliTextController)
-router.delete('/', deletePubliController)
+router.delete('/:id', deletePubliController)
 
 export default router
 
